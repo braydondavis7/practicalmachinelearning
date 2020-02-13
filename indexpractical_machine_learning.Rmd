@@ -42,7 +42,7 @@ train <- training[inTrain,]
 test <- training[-inTrain,]
 ```
 
-# Remove vaiables that are mostly NA and near zero values
+# Remove variables that are mostly NA and near zero values
 
 ```{r,echo=TRUE}
 # Near Zero Variance Columns
@@ -127,6 +127,12 @@ GBM_Predict <- predict(GBM_Model,newdata=test)
 GBM_cm <- confusionMatrix(test$classe,GBM_Predict)
 GBM_cm
 ```
+
+```{r,echo = TRUE}
+predictTest <- predict(FitRFmodel,newdata=testing)
+predictTest
+```
+
 
 ## Accuracy for the GBM model is 98.5% which is near the Random Forest model above but lies just below by about 1.3%. OOB rate for this model is 1.5%.
 
