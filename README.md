@@ -1,2 +1,2 @@
 # practicalmachinelearning
-Reppo for Braydon's Coursera Practical Machine Learning
+Repo for Braydon's Coursera Practical Machine Learning
